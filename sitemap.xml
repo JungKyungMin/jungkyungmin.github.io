@@ -4,12 +4,22 @@
 
     <sitemap>
         <loc>https://jungkyungmin.github.io/post-sitemap.xml</loc>
-        <lastmod>2021-07-30T11:07:54.964Z</lastmod>
+        <lastmod>2021-07-30T11:33:07.827Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>https://jungkyungmin.github.io/page-sitemap.xml</loc>
         <lastmod>2021-07-30T11:26:11.280Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://jungkyungmin.github.io/category-sitemap.xml</loc>
+        <lastmod>2021-07-30T11:33:07.827Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://jungkyungmin.github.io/tag-sitemap.xml</loc>
+        <lastmod>2021-07-30T11:33:07.827Z</lastmod>
     </sitemap>
 
 </sitemapindex>
