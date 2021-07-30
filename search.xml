@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>test1</title>
+      <link href="/2021/07/30/test1/"/>
+      <url>/2021/07/30/test1/</url>
+      
+        <content type="html"><![CDATA[<p>test1<br>test1<br>test1</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web </category>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> blog </tag>
+            
+            <tag> framework </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>write</title>
       <link href="/2021/07/30/write/"/>
       <url>/2021/07/30/write/</url>
