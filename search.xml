@@ -8,23 +8,19 @@
       <link href="/2021/09/01/alg2/"/>
       <url>/2021/09/01/alg2/</url>
       
-        <content type="html"><![CDATA[<p>hello</p>]]></content>
+        <content type="html"><![CDATA[<p>6<br>6<br>hello</p>]]></content>
       
       
       <categories>
           
-          <category> Alg </category>
+          <category> 6 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
-            
-            <tag> blog </tag>
-            
-            <tag> framework </tag>
+            <tag> 6 </tag>
             
         </tags>
       
@@ -37,23 +33,19 @@
       <link href="/2021/09/01/alg/"/>
       <url>/2021/09/01/alg/</url>
       
-        <content type="html"><![CDATA[<p>aaaaa</p>]]></content>
+        <content type="html"><![CDATA[<p>5<br>5<br>aaaaa</p>]]></content>
       
       
       <categories>
           
-          <category> Algorithm </category>
+          <category> 5 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
-            
-            <tag> blog </tag>
-            
-            <tag> framework </tag>
+            <tag> 5 </tag>
             
         </tags>
       
@@ -66,25 +58,19 @@
       <link href="/2021/08/18/testtt/"/>
       <url>/2021/08/18/testtt/</url>
       
-        <content type="html"><![CDATA[<p>asdfasdf<br>adg as<br>sdga<br>sdgadsg</p>]]></content>
+        <content type="html"><![CDATA[<p>4<br>4<br>asdfasdf<br>adg as<br>sdga<br>sdgadsg</p>]]></content>
       
       
       <categories>
           
-          <category> Web </category>
-          
-          <category> Hexo </category>
+          <category> 4 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
-            
-            <tag> blog </tag>
-            
-            <tag> framework </tag>
+            <tag> 4 </tag>
             
         </tags>
       
@@ -97,56 +83,19 @@
       <link href="/2021/08/18/test66/"/>
       <url>/2021/08/18/test66/</url>
       
-        <content type="html"><![CDATA[<p>asdfasf<br>asfdas<br>fas<br>fas<br>fdas<br>fas<br>fasf</p>]]></content>
+        <content type="html"><![CDATA[<p>9<br>9<br>asdfasf<br>asfdas<br>fas<br>fas<br>fdas<br>fas<br>fasf</p>]]></content>
       
       
       <categories>
           
-          <category> Web </category>
-          
-          <category> Hexo </category>
+          <category> 9 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
-            
-            <tag> blog </tag>
-            
-            <tag> framework </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>test5</title>
-      <link href="/2021/08/18/test5/"/>
-      <url>/2021/08/18/test5/</url>
-      
-        <content type="html"><![CDATA[<p>H1 asdfasdfasf<br>H2 sdadfasdfdsa<br>H3 asdfasdfsadf</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web </category>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> blog </tag>
-            
-            <tag> framework </tag>
+            <tag> 9 </tag>
             
         </tags>
       
@@ -159,25 +108,19 @@
       <link href="/2021/08/12/abcdefg/"/>
       <url>/2021/08/12/abcdefg/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>7<br>7</p>]]></content>
       
       
       <categories>
           
-          <category> Web </category>
-          
-          <category> Hexo </category>
+          <category> 7 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
-            
-            <tag> blog </tag>
-            
-            <tag> framework </tag>
+            <tag> 7 </tag>
             
         </tags>
       
@@ -190,19 +133,19 @@
       <link href="/2021/07/30/write/"/>
       <url>/2021/07/30/write/</url>
       
-        <content type="html"><![CDATA[<h1 id="1111"><a href="#1111" class="headerlink" title="1111"></a>1111</h1><h2 id="2222"><a href="#2222" class="headerlink" title="2222"></a>2222</h2><h3 id="3333"><a href="#3333" class="headerlink" title="3333"></a>3333</h3><h4 id="4444"><a href="#4444" class="headerlink" title="4444"></a>4444</h4>]]></content>
+        <content type="html"><![CDATA[<p>1<br>1</p>]]></content>
       
       
       <categories>
           
-          <category> hh </category>
+          <category> 1 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> gg </tag>
+            <tag> 1 </tag>
             
         </tags>
       
@@ -215,9 +158,21 @@
       <link href="/2021/07/30/my-new-post2/"/>
       <url>/2021/07/30/my-new-post2/</url>
       
-        <content type="html"><![CDATA[<p>blah blah</p>]]></content>
+        <content type="html"><![CDATA[<p>3<br>3<br>blah blah</p>]]></content>
       
       
+      <categories>
+          
+          <category> 3 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 3 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -228,9 +183,21 @@
       <link href="/2021/07/29/my-new-post/"/>
       <url>/2021/07/29/my-new-post/</url>
       
-        <content type="html"><![CDATA[<p>This is my first brand-new post with hexo.</p><p>I’m very excited!!</p>]]></content>
+        <content type="html"><![CDATA[<p>2<br>2<br>This is my first brand-new post with hexo.</p><p>I’m very excited!!</p>]]></content>
       
       
+      <categories>
+          
+          <category> 2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 2 </tag>
+            
+        </tags>
       
     </entry>
     

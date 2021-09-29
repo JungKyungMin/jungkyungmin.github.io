@@ -9,48 +9,8 @@
 
 
     <url>
-        <loc>https://jungkyungmin.github.io/2021/09/01/alg2/</loc>
-        <lastmod>2021-09-01T12:59:12.248Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/09/01/alg/</loc>
-        <lastmod>2021-09-01T12:56:15.172Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/08/18/testtt/</loc>
-        <lastmod>2021-08-18T12:00:15.142Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://jungkyungmin.github.io/2021/08/18/test66/</loc>
-        <lastmod>2021-08-18T11:59:42.068Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/07/29/my-new-post/</loc>
-        <lastmod>2021-08-18T11:56:16.264Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/08/18/test5/</loc>
-        <lastmod>2021-08-18T11:53:21.395Z</lastmod>
+        <lastmod>2021-09-29T07:06:37.121Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -58,23 +18,31 @@
 
     <url>
         <loc>https://jungkyungmin.github.io/2021/08/12/abcdefg/</loc>
-        <lastmod>2021-08-12T07:53:31.455Z</lastmod>
+        <lastmod>2021-09-29T07:05:45.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/2021/07/29/hello-world/</loc>
-        <lastmod>2021-08-06T12:51:23.534Z</lastmod>
+        <loc>https://jungkyungmin.github.io/2021/09/01/alg2/</loc>
+        <lastmod>2021-09-29T07:05:17.237Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/2021/07/30/write/</loc>
-        <lastmod>2021-07-30T11:33:07.827Z</lastmod>
+        <loc>https://jungkyungmin.github.io/2021/09/01/alg/</loc>
+        <lastmod>2021-09-29T07:04:48.328Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/08/18/testtt/</loc>
+        <lastmod>2021-09-29T07:03:36.853Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -82,7 +50,31 @@
 
     <url>
         <loc>https://jungkyungmin.github.io/2021/07/30/my-new-post2/</loc>
-        <lastmod>2021-07-30T10:57:17.116Z</lastmod>
+        <lastmod>2021-09-29T07:02:28.027Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/07/30/write/</loc>
+        <lastmod>2021-09-29T07:02:09.782Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/07/29/my-new-post/</loc>
+        <lastmod>2021-09-29T07:02:04.946Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/07/29/hello-world/</loc>
+        <lastmod>2021-09-29T07:01:26.959Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

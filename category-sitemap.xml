@@ -9,36 +9,57 @@
 
 
     <url>
-        <loc>https://jungkyungmin.github.io/categories/Alg/</loc>
-        <lastmod>2021-09-01T12:59:12.248Z</lastmod>
+        <loc>https://jungkyungmin.github.io/categories/9/</loc>
+        <lastmod>2021-09-29T07:06:37.121Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/categories/Algorithm/</loc>
-        <lastmod>2021-09-01T12:56:15.172Z</lastmod>
+        <loc>https://jungkyungmin.github.io/categories/7/</loc>
+        <lastmod>2021-09-29T07:05:45.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/categories/Web/Hexo/</loc>
-        <lastmod>2021-08-18T12:00:15.142Z</lastmod>
+        <loc>https://jungkyungmin.github.io/categories/6/</loc>
+        <lastmod>2021-09-29T07:05:17.237Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/categories/Web/</loc>
-        <lastmod>2021-08-18T12:00:15.142Z</lastmod>
+        <loc>https://jungkyungmin.github.io/categories/5/</loc>
+        <lastmod>2021-09-29T07:04:48.328Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/categories/hh/</loc>
-        <lastmod>2021-07-30T11:33:07.827Z</lastmod>
+        <loc>https://jungkyungmin.github.io/categories/4/</loc>
+        <lastmod>2021-09-29T07:03:36.853Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/categories/3/</loc>
+        <lastmod>2021-09-29T07:02:28.027Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/categories/1/</loc>
+        <lastmod>2021-09-29T07:02:09.782Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/categories/2/</loc>
+        <lastmod>2021-09-29T07:02:04.946Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
