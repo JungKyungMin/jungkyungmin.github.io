@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>abc</title>
+      <link href="/2021/10/13/abc/"/>
+      <url>/2021/10/13/abc/</url>
+      
+        <content type="html"><![CDATA[<p>asdfsfsa</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web </category>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> blog </tag>
+            
+            <tag> framework </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>note1.md</title>
       <link href="/2021/10/06/20211006-note1-md/"/>
       <url>/2021/10/06/20211006-note1-md/</url>
