@@ -5,8 +5,8 @@
     
     <entry>
       <title>note1.md</title>
-      <link href="/2021/10/06/note1-md/"/>
-      <url>/2021/10/06/note1-md/</url>
+      <link href="/2021/10/06/20211006-note1-md/"/>
+      <url>/2021/10/06/20211006-note1-md/</url>
       
         <content type="html"><![CDATA[<h2 id="유효성-검사"><a href="#유효성-검사" class="headerlink" title="유효성 검사"></a>유효성 검사</h2><p>메서드와 구현부{}를 작성할 때, 제일 먼저 해야 하는 일이 매개변수의 값이 적절한 것인지 확인하는 것이다.<br>메서드를 작성하는 사람은 ‘호출하는 쪽에서 알아서 적절한 값을 넘겨주겠지.’라는 생각을 절대 가져서는 안 된다.<br>타입만 맞으면 어떤 값도 매개변수를 통해 넘어올 수 있기 때문에, 가능한 모든 경우의 수에 대해 고민하고 그에 대비한 코드를 작성해야 한다.<br>아래에 정의된 메서드 divide는 매개변수 x를 y로 나눈 결과를 실수(flaot 타입)로 반환하는데, 0으로 나누는 것은 금지되어 있기 때문에 계산 전에 y의 값이 0인지 확인해야 한다.<br>그래서 y의 값이 0이면, 나누기를 계산할 수 없으므로 return문을 이용해서 작업을 중단하고 메서드를 빠져나와야 한다.<br>그렇지 않으면, 나누기를 하는 문장에서 프로그램이 비정상적으로 종료된다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">float</span> <span class="title">divide</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">    <span class="comment">// 작업을 하기 전에 나누느 수(y)가 0인지 확인한다.</span></span><br><span class="line">    <span class="keyword">if</span>(y==<span class="number">0</span>)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;0으로 나눌 수 없습니다.&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> x/(<span class="keyword">float</span>)y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>@자바의 정석</p>]]></content>
       
@@ -29,22 +29,9 @@
     
     
     <entry>
-      <title></title>
-      <link href="/2021/10/06/note1/"/>
-      <url>/2021/10/06/note1/</url>
-      
-        <content type="html"><![CDATA[<h2 id="유효성-검사"><a href="#유효성-검사" class="headerlink" title="유효성 검사"></a>유효성 검사</h2><p>메서드와 구현부{}를 작성할 때, 제일 먼저 해야 하는 일이 매개변수의 값이 적절한 것인지 확인하는 것이다.<br>메서드를 작성하는 사람은 ‘호출하는 쪽에서 알아서 적절한 값을 넘겨주겠지.’라는 생각을 절대 가져서는 안 된다.<br>타입만 맞으면 어떤 값도 매개변수를 통해 넘어올 수 있기 때문에, 가능한 모든 경우의 수에 대해 고민하고 그에 대비한 코드를 작성해야 한다.<br>아래에 정의된 메서드 divide는 매개변수 x를 y로 나눈 결과를 실수(flaot 타입)로 반환하는데, 0으로 나누는 것은 금지되어 있기 때문에 계산 전에 y의 값이 0인지 확인해야 한다.<br>그래서 y의 값이 0이면, 나누기를 계산할 수 없으므로 return문을 이용해서 작업을 중단하고 메서드를 빠져나와야 한다.<br>그렇지 않으면, 나누기를 하는 문장에서 프로그램이 비정상적으로 종료된다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">float</span> <span class="title">divide</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">    <span class="comment">// 작업을 하기 전에 나누느 수(y)가 0인지 확인한다.</span></span><br><span class="line">    <span class="keyword">if</span>(y==<span class="number">0</span>)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;0으로 나눌 수 없습니다.&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> x/(<span class="keyword">float</span>)y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>@자바의 정석</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>alg2</title>
-      <link href="/2021/09/01/alg2/"/>
-      <url>/2021/09/01/alg2/</url>
+      <link href="/2021/09/01/20210901-alg2/"/>
+      <url>/2021/09/01/20210901-alg2/</url>
       
         <content type="html"><![CDATA[<p>6<br>6<br>hello</p>]]></content>
       
@@ -68,8 +55,8 @@
     
     <entry>
       <title>alg</title>
-      <link href="/2021/09/01/alg/"/>
-      <url>/2021/09/01/alg/</url>
+      <link href="/2021/09/01/20210901-alg/"/>
+      <url>/2021/09/01/20210901-alg/</url>
       
         <content type="html"><![CDATA[<p>5<br>5<br>aaaaa</p>]]></content>
       
@@ -93,8 +80,8 @@
     
     <entry>
       <title>testtt</title>
-      <link href="/2021/08/18/testtt/"/>
-      <url>/2021/08/18/testtt/</url>
+      <link href="/2021/08/18/20210818-testtt/"/>
+      <url>/2021/08/18/20210818-testtt/</url>
       
         <content type="html"><![CDATA[<p>4xxxxcvzxcv<br>ccccczxcvzxvcxzcvz<br>asfdsfasfsadfas<br>fsafasfsafasfas<br>xzcvzxcvzxvzxc<br>cxzcvzxcvzxvzxc</p><p>xzcvzxcvzxvzxc<br>xzcvzxcvzxvzxc</p><p>xzcvzxcvzxvzxc<br>xzcvzxcvzxvzxc<br>xzkicvzxcvzxvzxc<br>xzcvzxcvzxvzxc<br>xzcvzxcvzxvzxc<br>zxc</p>]]></content>
       
@@ -118,8 +105,8 @@
     
     <entry>
       <title>test66</title>
-      <link href="/2021/08/18/test66/"/>
-      <url>/2021/08/18/test66/</url>
+      <link href="/2021/08/18/20210818-test66/"/>
+      <url>/2021/08/18/20210818-test66/</url>
       
         <content type="html"><![CDATA[<p>9<br>9<br>asdfasf<br>asfdas<br>fas<br>fas<br>fdas<br>fas<br>fasf</p>]]></content>
       
@@ -143,8 +130,8 @@
     
     <entry>
       <title>test5</title>
-      <link href="/2021/08/18/test5/"/>
-      <url>/2021/08/18/test5/</url>
+      <link href="/2021/08/18/20210818-test5/"/>
+      <url>/2021/08/18/20210818-test5/</url>
       
         <content type="html"><![CDATA[<p>8<br>8<br>H1 asdfasdfasf<br>H2 sdadfasdfdsa<br>H3 asdfasdfsadf</p>]]></content>
       
@@ -168,8 +155,8 @@
     
     <entry>
       <title>abcdefg</title>
-      <link href="/2021/08/12/abcdefg/"/>
-      <url>/2021/08/12/abcdefg/</url>
+      <link href="/2021/08/12/20210812-abcdefg/"/>
+      <url>/2021/08/12/20210812-abcdefg/</url>
       
         <content type="html"><![CDATA[<p>7<br>7</p>]]></content>
       
