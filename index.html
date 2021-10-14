@@ -133,18 +133,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">15</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -174,6 +174,139 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://jungkyungmin.github.io/2021/10/14/spring-iocdi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JungKyungMin">
+      <meta itemprop="description" content="My Story">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JKM's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/10/14/spring-iocdi/" class="post-title-link" itemprop="url">Spring- IoC / DI</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-10-14 22:29:00 / Modified: 22:36:32" itemprop="dateCreated datePublished" datetime="2021-10-14T22:29:00+09:00">2021-10-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Spring/" itemprop="url" rel="index"><span itemprop="name">Spring</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="IoC-Inversion-of-Control-와-DI-Dependency-Injection"><a href="#IoC-Inversion-of-Control-와-DI-Dependency-Injection" class="headerlink" title="IoC ( Inversion of Control ) 와 DI ( Dependency Injection )"></a>IoC ( Inversion of Control ) 와 DI ( Dependency Injection )</h1><p><img src="/image/iocdi.png"></p>
+<h2 id="IoC-Inversion-of-Control"><a href="#IoC-Inversion-of-Control" class="headerlink" title="IoC ( Inversion of Control )"></a>IoC ( Inversion of Control )</h2><ul>
+<li>개발자에서 → 프레임워크로 제어의 객체관리권한이 넘어간다.(=제어의 역전)</li>
+<li>스프링에서는 일반적인 Java 객체를 new로 생성하여 개발자가 관리하는 것이 아닌 객체의생성, 생명주기의 관리까지 Spring Container(프레임워크)에 모두 맡긴다.</li>
+<li>POJO ( Plain old java object ) 의 생성, 초기화, 서비스, 소멸에 대한 권한을 가진다.</li>
+</ul>
+<h4 id="DL-Dependency-Lookup-의존성-검색"><a href="#DL-Dependency-Lookup-의존성-검색" class="headerlink" title="DL ( Dependency Lookup ) 의존성 검색"></a>DL ( Dependency Lookup ) 의존성 검색</h4><ul>
+<li>저장소에 저장되어 있는 Bean에 접근하기 위해 컨테이너가 제공하는 API를 이용하여 Bean을 Lookup 하는 것.</li>
+<li>DL 사용 시 컨테이너 종속성이 증가하여 주로 DI를 사용한다.</li>
+</ul>
+<h2 id="DI-Dependency-Injection"><a href="#DI-Dependency-Injection" class="headerlink" title="DI ( Dependency Injection )"></a>DI ( Dependency Injection )</h2><p>각 클래스간의 의존관계를 빈 설정(Bean Definition) 정보를 바탕으로 컨테이너가 자동으로 연결해주는 것.(개발자가 XML이나 annotation을 통해 빈 설정)</p>
+<ul>
+<li><h4 id="DI의-장점"><a href="#DI의-장점" class="headerlink" title="DI의 장점"></a>DI의 장점</h4><ul>
+<li>컴포넌트 간의 결합도가 제거되어 코드테스트에 용이하다.</li>
+<li>DI를 통하여 불가능한 상황을 Mock와 같은 기술을 통해 안정적으로 테스트가 가능하다.</li>
+<li>코드를 확장하거나 변경할 때 영향을 최소화한다. (추상화)</li>
+<li>순환참조를 막을 수 있다.</li>
+<li>코드가 단순해진다.</li>
+</ul>
+</li>
+<li><h4 id="DI의-유형"><a href="#DI의-유형" class="headerlink" title="DI의 유형"></a>DI의 유형</h4><ul>
+<li><p>Setter Injection - Setter 메서드를 이용한 의존성 삽입</p>
+<ul>
+<li>의존성을 입력 받는 setter 메서드를 만들고 이를 통해 의존성을 주입한다.</li>
+</ul>
+</li>
+<li><p>Constructor Injection - 생성자를 이용한 의존성 삽입</p>
+<ul>
+<li>필요한 의존성을 포함하는 클래스의 생성자를 만들고 이를 통해 의존성을 주입한다.</li>
+</ul>
+</li>
+<li><p>Method Injection - 일반 메서드를 이용한 의존성 삽입</p>
+<ul>
+<li>의존성을 입력 받는 일반 메서드를 만들고 이를 통해 의존성을 주입한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h4 id="Spring-DI-컨테이너의-개념"><a href="#Spring-DI-컨테이너의-개념" class="headerlink" title="Spring DI 컨테이너의 개념"></a>Spring DI 컨테이너의 개념</h4><ul>
+<li>Spring DI 컨테이너가 관리하는 객체를 빈(bean)이라고 하며, 이 bean들을 관리한다는 의미로 컨테이너를 빈팩토리(BeanFactory)라고 부른다.</li>
+<li>객체의 생성과 객체 사이의 런타임관계를 DI관점에서 볼 때는 컨테이너를 BeanFacotry라고 한다.</li>
+<li>BeanFacotry에 여러 가지 컨테이너 기능을 추가하여 ApllicationContext)라고 한다.</li>
+</ul>
+</li>
+<li><h4 id="BeanFactory와-ApplicationContext"><a href="#BeanFactory와-ApplicationContext" class="headerlink" title="BeanFactory와 ApplicationContext"></a>BeanFactory와 ApplicationContext</h4><ul>
+<li>BeanFactory<ul>
+<li>Bean을 등록, 생성, 조회, 반환 관리.</li>
+<li>보통은 BeanFactory를 바로 사용하지 않고, 이를 확장한 ApplicationContext를 사용.</li>
+<li>getBean() 메서드가 정의되어 있다.</li>
+</ul>
+</li>
+<li>Application Context<ul>
+<li>Bean을 등록, 생성, 조회, 반환 관리하는 기능은 BeanFactory와 같음.</li>
+<li>Spring의 각종 부가서비스를 추가로 제공.</li>
+<li>Spring이 제공하는 ApplicationContext 구현클래스가 여러가지 종류가 있음.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -876,86 +1009,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>1<br>1</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://jungkyungmin.github.io/2021/07/30/my-new-post2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="JungKyungMin">
-      <meta itemprop="description" content="My Story">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JKM's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/30/my-new-post2/" class="post-title-link" itemprop="url">my second post</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-07-30 17:30:18" itemprop="dateCreated datePublished" datetime="2021-07-30T17:30:18+09:00">2021-07-30</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-09-29 16:02:28" itemprop="dateModified" datetime="2021-09-29T16:02:28+09:00">2021-09-29</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/3/" itemprop="url" rel="index"><span itemprop="name">3</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>3<br>3<br>blah blah</p>
 
       
     </div>
