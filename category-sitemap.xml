@@ -10,21 +10,21 @@
 
     <url>
         <loc>https://jungkyungmin.github.io/categories/java/basic/</loc>
-        <lastmod>2021-10-27T05:29:09.857Z</lastmod>
+        <lastmod>2021-10-27T05:38:25.680Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://jungkyungmin.github.io/categories/java/</loc>
-        <lastmod>2021-10-27T05:29:09.857Z</lastmod>
+        <lastmod>2021-10-27T05:38:25.680Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://jungkyungmin.github.io/categories/DB/</loc>
-        <lastmod>2021-10-21T22:57:22.271Z</lastmod>
+        <lastmod>2021-10-27T05:37:15.244Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -37,22 +37,22 @@
     </url>
 
     <url>
+        <loc>https://jungkyungmin.github.io/categories/Spring/</loc>
+        <lastmod>2021-10-15T08:33:50.910Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://jungkyungmin.github.io/categories/Web/Hexo/</loc>
-        <lastmod>2021-10-21T04:36:06.301Z</lastmod>
+        <lastmod>2021-10-13T03:33:49.754Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://jungkyungmin.github.io/categories/Web/</loc>
-        <lastmod>2021-10-21T04:36:06.301Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/categories/Spring/</loc>
-        <lastmod>2021-10-15T08:33:50.910Z</lastmod>
+        <lastmod>2021-10-13T03:33:49.754Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
