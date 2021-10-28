@@ -196,7 +196,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/10/28/servlet-md/" class="post-title-link" itemprop="url">servlet</a>
+          <a href="/2021/10/28/servlet-md/" class="post-title-link" itemprop="url">Servlet Programming</a>
         </h2>
 
         <div class="post-meta-container">
@@ -206,10 +206,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-10-28 23:42:50 / Modified: 23:44:10" itemprop="dateCreated datePublished" datetime="2021-10-28T23:42:50+09:00">2021-10-28</time>
+      <time title="Created: 2021-10-28 23:42:50" itemprop="dateCreated datePublished" datetime="2021-10-28T23:42:50+09:00">2021-10-28</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-10-29 00:41:58" itemprop="dateModified" datetime="2021-10-29T00:41:58+09:00">2021-10-29</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -230,7 +236,27 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>.</p>
+          <p>브라우저 : 클라이언트의 요청을 받아서 서버에 전송하고, 서버의 응답을 다시 클라이언트에 반환해준다.</p>
+<p>서블릿 : 클라이언트의 요청을 받고 요청을 처리하여 결과를 클라이언트에게 제공하는 자바 인터페이스. java.servlet.package에 정의된 인터페이스.</p>
+<p>JSP(Java Server Pages) : HTML 코드에 JAVA 코드를 넣어 동적 웹페이지를 생성하는 웹어플리케이션 도구. JSP가 실행되면 자바 서블릿으로 변환되며 WAS에서 동작되면서 필요한 기능을 수행하고 그렇게 생성된 데이터를 웹페이지와 하께 클라이언트로 응답한다.</p>
+<p>웹서버 : 하드웨어와 스프트웨어에서 두가지 의미를 갖는다.</p>
+<ul>
+<li>하드웨어 : 인터넷에 연결되어 웹에 연결된 다른 기기들이 웹서버의 데이터를 주고받을 수 있도록 한다.</li>
+<li>소프트웨어 : 웹브라우저와 같은 클라이언트로부터 HTTP요청을 받아들이고, HTML 문서와 같은 웹 페이지를 받환하는 컴퓨터 프로그램<img src="/image/apachetomcat2.svg" width="70%" height="70%"/></li>
+</ul>
+<h3 id="아파치와-톰캣"><a href="#아파치와-톰캣" class="headerlink" title="아파치와 톰캣"></a>아파치와 톰캣</h3><p>아파치 : 아파치 소프트웨어 재단</p>
+<p>아파치 서버 : 우리가 흔히 아파치라고 부르는 Apache HTTP Server, 정적인 파일을 처리해주는 웹 서버</p>
+<p>톰캣 WAS(Web Application Server) : DB처리와 같은 동적인 기능들을 가공하여 HTML파일로 만들어 클라이언트에게 제공, JSP와 Servlet을 구동하기 위한 서블릿 컨테이너 역할을 수행한다. 아파치서버와는 다르게 DB연결, 다른 응용프로그램과 상호 작용 등 동적인 기능들을 사용할 수 있다.</p>
+<p>WAS (Web Application Server)</p>
+<ul>
+<li>컨테이너, 웹컨테이너, 서블릿 컨테이너라고도 부름.</li>
+<li>DB처리, 로직 처리를 요구하는 동적타입을 제공하는 소프트웨어 프레임워크를 의미한다.</li>
+<li>프로그램 실행환경과 데이터베이스 접속기능을 제공한다.</li>
+<li>여러개의 트랜잭션을 관리한다.</li>
+<li>업무를 처리하는 비즈니스 로직을 수행한다.</li>
+</ul>
+<p>아파치 톰캣이라 부르는 이유<br>아파치와 톰캣의 기능은 나뉘어져 있지만, 톰캣 안에 있는 컨테이너를 통해 일부 아파치의 기능을 발휘하기 때문에 아파치 톰캣으로 부르곤 한다. 하지만 톰캣이 아파치의 모든 기능을 포함하고 있는 것은 아니다.<br><img src="/image/apachetomcat.png" width="70%" height="70%"/></p>
+<p>@ <a target="_blank" rel="noopener" href="https://velog.io/@kdhyo">https://velog.io/@kdhyo</a><br>@ <a target="_blank" rel="noopener" href="https://developer.mozilla.org/">https://developer.mozilla.org/</a><br>@ <a target="_blank" rel="noopener" href="https://limmmee.tistory.com/4">https://limmmee.tistory.com/4</a></p>
 
       
     </div>
