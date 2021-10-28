@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>servlet</title>
+      <link href="/2021/10/28/servlet-md/"/>
+      <url>/2021/10/28/servlet-md/</url>
+      
+        <content type="html"><![CDATA[<p>.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>DB와 DBMS</title>
       <link href="/2021/10/21/db/"/>
       <url>/2021/10/21/db/</url>
@@ -72,9 +91,9 @@
       
         <tags>
             
-            <tag> h2 </tag>
-            
             <tag> DB </tag>
+            
+            <tag> h2 </tag>
             
         </tags>
       
@@ -291,16 +310,16 @@
     
     
     <entry>
-      <title>java-basic</title>
+      <title>JAVA-basic</title>
       <link href="/2021/08/12/java-basic/"/>
       <url>/2021/08/12/java-basic/</url>
       
-        <content type="html"><![CDATA[<h2 id="접근-제어자"><a href="#접근-제어자" class="headerlink" title="접근 제어자"></a>접근 제어자</h2><table><thead><tr><th align="center">제어자</th><th align="center">같은 클래스</th><th align="center">같은 패키지</th><th align="center">자손클래스</th><th align="center">전체</th></tr></thead><tbody><tr><td align="center">public</td><td align="center">O</td><td align="center">O</td><td align="center">O</td><td align="center">O</td></tr><tr><td align="center">protected</td><td align="center">O</td><td align="center">O</td><td align="center">O</td><td align="center"></td></tr><tr><td align="center">(default)</td><td align="center">O</td><td align="center">O</td><td align="center"></td><td align="center"></td></tr><tr><td align="center">private</td><td align="center">O</td><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table><p>####접근제어자를 사용하는 이유 : 캡슐화.</p><ul><li>외부로부터 데이터를 보호하기 위해서</li><li>외부에는 불필요한, 내부적으로만 사용되는 부분을 감추기 위해서</li></ul><h2 id="배열"><a href="#배열" class="headerlink" title="배열"></a>배열</h2><h4 id="배열의-선언"><a href="#배열의-선언" class="headerlink" title="배열의 선언"></a>배열의 선언</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span>[] score = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123; <span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>, <span class="number">50</span>&#125;;  <span class="comment">//new int 생략가능</span></span><br><span class="line"><span class="keyword">int</span>[] score2 = &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span> &#125;;</span><br></pre></td></tr></table></figure><h4 id="배열-복사"><a href="#배열-복사" class="headerlink" title="배열 복사"></a>배열 복사</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// num[0]에서 newNum[0]으로 num.length개의 데이터를 복사.</span></span><br><span class="line">System.arraycopy(num, <span class="number">0</span>, newNum, <span class="number">0</span>, num.length);</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h2 id="접근-제어자"><a href="#접근-제어자" class="headerlink" title="접근 제어자"></a>접근 제어자</h2><table><thead><tr><th align="center">제어자</th><th align="center">같은 클래스</th><th align="center">같은 패키지</th><th align="center">자손클래스</th><th align="center">전체</th></tr></thead><tbody><tr><td align="center">public</td><td align="center">O</td><td align="center">O</td><td align="center">O</td><td align="center">O</td></tr><tr><td align="center">protected</td><td align="center">O</td><td align="center">O</td><td align="center">O</td><td align="center"></td></tr><tr><td align="center">(default)</td><td align="center">O</td><td align="center">O</td><td align="center"></td><td align="center"></td></tr><tr><td align="center">private</td><td align="center">O</td><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table><h4 id="접근제어자를-사용하는-이유-캡슐화"><a href="#접근제어자를-사용하는-이유-캡슐화" class="headerlink" title="접근제어자를 사용하는 이유 : 캡슐화."></a>접근제어자를 사용하는 이유 : 캡슐화.</h4><ul><li>외부로부터 데이터를 보호하기 위해서</li><li>외부에는 불필요한, 내부적으로만 사용되는 부분을 감추기 위해서</li></ul><h2 id="배열"><a href="#배열" class="headerlink" title="배열"></a>배열</h2><h4 id="배열의-선언"><a href="#배열의-선언" class="headerlink" title="배열의 선언"></a>배열의 선언</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span>[] score = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123; <span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>, <span class="number">50</span>&#125;;  <span class="comment">//new int 생략가능</span></span><br><span class="line"><span class="keyword">int</span>[] score2 = &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span> &#125;;</span><br></pre></td></tr></table></figure><h4 id="배열-복사"><a href="#배열-복사" class="headerlink" title="배열 복사"></a>배열 복사</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// num[0]에서 newNum[0]으로 num.length개의 데이터를 복사.</span></span><br><span class="line">System.arraycopy(num, <span class="number">0</span>, newNum, <span class="number">0</span>, num.length);</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
           
-          <category> java </category>
+          <category> JAVA </category>
           
           <category> basic </category>
           
