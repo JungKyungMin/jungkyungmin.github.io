@@ -9,6 +9,20 @@
 
 
     <url>
+        <loc>https://jungkyungmin.github.io/categories/etc/HTML/</loc>
+        <lastmod>2021-10-29T06:32:44.880Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/categories/etc/</loc>
+        <lastmod>2021-10-29T06:32:44.880Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://jungkyungmin.github.io/categories/JAVA/</loc>
         <lastmod>2021-10-28T15:41:58.998Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -25,13 +39,6 @@
     <url>
         <loc>https://jungkyungmin.github.io/categories/DB/</loc>
         <lastmod>2021-10-27T05:37:15.244Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/categories/etc/</loc>
-        <lastmod>2021-10-21T05:09:10.391Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -60,13 +67,6 @@
     <url>
         <loc>https://jungkyungmin.github.io/categories/4/</loc>
         <lastmod>2021-10-06T12:31:21.092Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/categories/8/</loc>
-        <lastmod>2021-09-29T07:09:40.588Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
