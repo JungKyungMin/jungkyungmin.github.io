@@ -6,23 +6,24 @@
     
 
     
-    <title>note1.md | JKM&#39;s Blog</title>
+    <title>Forward vs Redirect | JKM&#39;s Blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="유효성 검사" />
+    <meta name="keywords" content="forward,redirect" />
     
-    <meta name="description" content="유효성 검사메서드와 구현부{}를 작성할 때, 제일 먼저 해야 하는 일이 매개변수의 값이 적절한 것인지 확인하는 것이다.메서드를 작성하는 사람은 ‘호출하는 쪽에서 알아서 적절한 값을 넘겨주겠지.’라는 생각을 절대 가져서는 안 된다.타입만 맞으면 어떤 값도 매개변수를 통해 넘어올 수 있기 때문에, 가능한 모든 경우의 수에 대해 고민하고 그에 대비한 코드를 작성">
+    <meta name="description" content="X">
 <meta property="og:type" content="article">
-<meta property="og:title" content="note1.md">
-<meta property="og:url" content="https://jungkyungmin.github.io/2021/10/06/check/index.html">
+<meta property="og:title" content="Forward vs Redirect">
+<meta property="og:url" content="https://jungkyungmin.github.io/2021/07/29/forwardredirect/index.html">
 <meta property="og:site_name" content="JKM&#39;s Blog">
-<meta property="og:description" content="유효성 검사메서드와 구현부{}를 작성할 때, 제일 먼저 해야 하는 일이 매개변수의 값이 적절한 것인지 확인하는 것이다.메서드를 작성하는 사람은 ‘호출하는 쪽에서 알아서 적절한 값을 넘겨주겠지.’라는 생각을 절대 가져서는 안 된다.타입만 맞으면 어떤 값도 매개변수를 통해 넘어올 수 있기 때문에, 가능한 모든 경우의 수에 대해 고민하고 그에 대비한 코드를 작성">
+<meta property="og:description" content="X">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-10-06T12:41:35.000Z">
-<meta property="article:modified_time" content="2021-10-06T12:42:54.872Z">
+<meta property="article:published_time" content="2021-07-29T07:08:18.000Z">
+<meta property="article:modified_time" content="2021-11-04T17:28:23.509Z">
 <meta property="article:author" content="JungKyungMin">
-<meta property="article:tag" content="유효성 검사">
+<meta property="article:tag" content="forward">
+<meta property="article:tag" content="redirect">
 <meta name="twitter:card" content="summary">
     
 
@@ -150,19 +151,19 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/JAVA/">JAVA</a>
+    <a class="page-title-link" href="/categories/Network/">Network</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-check" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-forwardredirect" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        note1.md
+        Forward vs Redirect
         </h1>
     
 
@@ -173,16 +174,16 @@
                 
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/2021/10/06/check/" class="article-date">
-       <time datetime="2021-10-06T12:41:35.000Z" itemprop="datePublished">2021-10-06</time>
+    <a href="/2021/07/29/forwardredirect/" class="article-date">
+       <time datetime="2021-07-29T07:08:18.000Z" itemprop="datePublished">2021-07-29</time>
     </a>
   </div>
 
 
 <div class="article-date">
   <i class="fa fa-calendar-plus-o"></i>
-  <a href="/2021/10/06/check/" class="article-date">
-     <time datetime="2021-10-06T12:42:54.872Z" itemprop="dateModified">2021-10-06</time>
+  <a href="/2021/07/29/forwardredirect/" class="article-date">
+     <time datetime="2021-11-04T17:28:23.509Z" itemprop="dateModified">2021-11-05</time>
   </a>
 </div>
 
@@ -192,7 +193,7 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%EC%9C%A0%ED%9A%A8%EC%84%B1-%EA%B2%80%EC%82%AC/" rel="tag">유효성 검사</a>
+        <a class="tag-link-link" href="/tags/forward/" rel="tag">forward</a>, <a class="tag-link-link" href="/tags/redirect/" rel="tag">redirect</a>
     </div>
 
                 
@@ -209,12 +210,7 @@
 
             
 
-            <h2 id="유효성-검사"><a href="#유효성-검사" class="headerlink" title="유효성 검사"></a>유효성 검사</h2><p>메서드와 구현부{}를 작성할 때, 제일 먼저 해야 하는 일이 매개변수의 값이 적절한 것인지 확인하는 것이다.<br>메서드를 작성하는 사람은 ‘호출하는 쪽에서 알아서 적절한 값을 넘겨주겠지.’라는 생각을 절대 가져서는 안 된다.<br>타입만 맞으면 어떤 값도 매개변수를 통해 넘어올 수 있기 때문에, 가능한 모든 경우의 수에 대해 고민하고 그에 대비한 코드를 작성해야 한다.<br>아래에 정의된 메서드 divide는 매개변수 x를 y로 나눈 결과를 실수(flaot 타입)로 반환하는데, 0으로 나누는 것은 금지되어 있기 때문에 계산 전에 y의 값이 0인지 확인해야 한다.<br>그래서 y의 값이 0이면, 나누기를 계산할 수 없으므로 return문을 이용해서 작업을 중단하고 메서드를 빠져나와야 한다.<br>그렇지 않으면, 나누기를 하는 문장에서 프로그램이 비정상적으로 종료된다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">float</span> <span class="title">divide</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">    <span class="comment">// 작업을 하기 전에 나누느 수(y)가 0인지 확인한다.</span></span><br><span class="line">    <span class="keyword">if</span>(y==<span class="number">0</span>)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;0으로 나눌 수 없습니다.&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> x/(<span class="keyword">float</span>)y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>@자바의 정석</p>
+            <p>X</p>
 
         </div>
         <footer class="article-footer">
@@ -222,7 +218,7 @@
 
 
 
-    <a data-url="https://jungkyungmin.github.io/2021/10/06/check/" data-id="ckvl89usw0001y8u35i44auvk" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://jungkyungmin.github.io/2021/07/29/forwardredirect/" data-id="ckvl89ut30009y8u3bymf69mm" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -292,16 +288,17 @@
             "@type": "Person",
             "name": "JungKyungMin"
         },
-        "headline": "note1.md",
+        "headline": "Forward vs Redirect",
         "image": "https://jungkyungmin.github.io",
-        "keywords": "유효성 검사",
-        "genre": "JAVA",
-        "datePublished": "2021-10-06",
-        "dateCreated": "2021-10-06",
-        "dateModified": "2021-10-06",
-        "url": "https://jungkyungmin.github.io/2021/10/06/check/",
-        "description": "유효성 검사메서드와 구현부{}를 작성할 때, 제일 먼저 해야 하는 일이 매개변수의 값이 적절한 것인지 확인하는 것이다.메서드를 작성하는 사람은 ‘호출하는 쪽에서 알아서 적절한 값을 넘겨주겠지.’라는 생각을 절대 가져서는 안 된다.타입만 맞으면 어떤 값도 매개변수를 통해 넘어올 수 있기 때문에, 가능한 모든 경우의 수에 대해 고민하고 그에 대비한 코드를 작성",
-        "wordCount": 182
+        "keywords": "forward redirect",
+        "genre": "Network",
+        "datePublished": "2021-07-29",
+        "dateCreated": "2021-07-29",
+        "dateModified": "2021-11-05",
+        "url": "https://jungkyungmin.github.io/2021/07/29/forwardredirect/",
+        "description": "X
+",
+        "wordCount": 1
     }
 </script>
 
@@ -382,20 +379,20 @@
         
 <nav id="article-nav">
     
-        <a href="/2021/10/14/spring-iocdi/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2021/07/30/my-new-post2/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            Spring- IoC / DI
+            my second post
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2021/09/01/markdown/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2021/07/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Markdown 문법</p>
+        <p class="article-nav-title">Hello World</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -612,7 +609,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'https://jungkyungmin.github.io/2021/10/06/check/';
+    var disqus_url = 'https://jungkyungmin.github.io/2021/07/29/forwardredirect/';
     
     (function() {
     var dsq = document.createElement('script');

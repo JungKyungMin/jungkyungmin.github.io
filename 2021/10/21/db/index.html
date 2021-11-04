@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>DB와 DBMS | JKM&#39;s Blog</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="DB,DBMS" />
+    
+    <meta name="description" content="1. 데이터베이스(DB)란?데이터베이스는 컴퓨터시스템에 전자적으로 저장된 체계적 데이터의 모음 특징 실시간 접근성 사용자의 요구(Query)를 실시간 처리 및 응답한다.   계속적인 변화 삽입, 삭제, 수정 등의 동적인 작업을 통해 데이터를 지속적으로 갱신할 수 있다.   동시공유 여러 사용자가 동일한 데이터를 동시에 접근 및 사용할 수 있다.   내용에">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DB와 DBMS">
+<meta property="og:url" content="https://jungkyungmin.github.io/2021/10/21/db/index.html">
+<meta property="og:site_name" content="JKM&#39;s Blog">
+<meta property="og:description" content="1. 데이터베이스(DB)란?데이터베이스는 컴퓨터시스템에 전자적으로 저장된 체계적 데이터의 모음 특징 실시간 접근성 사용자의 요구(Query)를 실시간 처리 및 응답한다.   계속적인 변화 삽입, 삭제, 수정 등의 동적인 작업을 통해 데이터를 지속적으로 갱신할 수 있다.   동시공유 여러 사용자가 동일한 데이터를 동시에 접근 및 사용할 수 있다.   내용에">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-10-21T05:42:00.000Z">
+<meta property="article:modified_time" content="2021-10-27T05:37:15.244Z">
+<meta property="article:author" content="JungKyungMin">
+<meta property="article:tag" content="DB">
+<meta property="article:tag" content="DBMS">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/" title="JKM&#39;s Blog" type="application/atom+xml" />
+    
+
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/1/">1</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/3/">3</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DB/">DB</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/JAVA/">JAVA</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/JAVA/basic/">basic</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Markdown/">Markdown</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Network/">Network</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Spring/">Spring</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/etc/">etc</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/etc/HTML/">HTML</a></li></ul></li></ul>
+                                
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/DB/">DB</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-db" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        DB와 DBMS
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2021/10/21/db/" class="article-date">
+       <time datetime="2021-10-21T05:42:00.000Z" itemprop="datePublished">2021-10-21</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/2021/10/21/db/" class="article-date">
+     <time datetime="2021-10-27T05:37:15.244Z" itemprop="dateModified">2021-10-27</time>
+  </a>
+</div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/DB/" rel="tag">DB</a>, <a class="tag-link-link" href="/tags/DBMS/" rel="tag">DBMS</a>
+    </div>
+
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <h1 id="1-데이터베이스-DB-란"><a href="#1-데이터베이스-DB-란" class="headerlink" title="1. 데이터베이스(DB)란?"></a>1. 데이터베이스(DB)란?</h1><p>데이터베이스는 컴퓨터시스템에 전자적으로 저장된 체계적 데이터의 모음<br><br></p>
+<h4 id="특징"><a href="#특징" class="headerlink" title="특징"></a>특징</h4><ul>
+<li>실시간 접근성<ul>
+<li>사용자의 요구(Query)를 실시간 처리 및 응답한다.</li>
+</ul>
+</li>
+<li>계속적인 변화<ul>
+<li>삽입, 삭제, 수정 등의 동적인 작업을 통해 데이터를 지속적으로 갱신할 수 있다.</li>
+</ul>
+</li>
+<li>동시공유<ul>
+<li>여러 사용자가 동일한 데이터를 동시에 접근 및 사용할 수 있다.</li>
+</ul>
+</li>
+<li>내용에 따른 참조<ul>
+<li>데이터의 물리적인 위치가 아니라 데이터 값에 따라 참조 된다.</li>
+</ul>
+</li>
+</ul>
+<h1 id="2-데이터베이스-관리시스템-DBMS-란"><a href="#2-데이터베이스-관리시스템-DBMS-란" class="headerlink" title="2. 데이터베이스 관리시스템(DBMS)란?"></a>2. 데이터베이스 관리시스템(DBMS)란?</h1><ul>
+<li>DB를 생성 및 관리하며 응용 프로그램들이 DB를 공유하며 사용할 수 있는 환경을 제공하는 소프트웨어.</li>
+<li>데이터와 응용 프로그램 사이를 중계한다. ( DB ← DBMS → 응용프로그램 )</li>
+</ul>
+<h4 id="DBMS의-장점"><a href="#DBMS의-장점" class="headerlink" title="DBMS의 장점"></a>DBMS의 장점</h4><ul>
+<li>데이터 중복 최소화</li>
+<li>데이터의 공용</li>
+<li>데이터 일관성 유지 <ul>
+<li>한 가지를 나타내는 두 개의 데이터가 있을 때, 하나의 데이터만 변경되고 다른 하나는 변경되지 않는다면 데이터간의 불일치가 생긴다.</li>
+</ul>
+</li>
+<li>무결성 유지</li>
+<li>보안 보장</li>
+</ul>
+<h4 id="DBMS의-단점"><a href="#DBMS의-단점" class="headerlink" title="DBMS의 단점"></a>DBMS의 단점</h4><ul>
+<li>비용<ul>
+<li>H/W, DBMS, 운영비, 교육비, 개발비</li>
+</ul>
+</li>
+</ul>
+<h1 id="3-DB-응용"><a href="#3-DB-응용" class="headerlink" title="3. DB 응용"></a>3. DB 응용</h1><h2 id="Data-Warehouse"><a href="#Data-Warehouse" class="headerlink" title="Data Warehouse"></a>Data Warehouse</h2><ul>
+<li>데이터 분석을 위한 거대한 데이터 보관소</li>
+<li>다수의 데이터 소스로부터 분석에 필요한 자료를 미리 가공하여 수집</li>
+</ul>
+<h2 id="Data-Mining"><a href="#Data-Mining" class="headerlink" title="Data Mining"></a>Data Mining</h2><ul>
+<li>대규모의 데이터로부터 데이터의 패턴이나 규칙 등의 유용한 정보를 자동으로 발견하는 응용 및 방법</li>
+</ul>
+<h1 id="4-관계형-Relational-모델"><a href="#4-관계형-Relational-모델" class="headerlink" title="4. 관계형(Relational) 모델"></a>4. 관계형(Relational) 모델</h1><h2 id="핵심-용어"><a href="#핵심-용어" class="headerlink" title="핵심 용어"></a>핵심 용어</h2><ul>
+<li>Database : Table의 집합</li>
+<li>Table : Row의 집합</li>
+<li>Row : Table의 행</li>
+<li>Column : Table의 열</li>
+<li>Domain : 특정 Column이 가질 수 있는 값의 집합</li>
+</ul>
+<h2 id="관계형-모델의-특징"><a href="#관계형-모델의-특징" class="headerlink" title="관계형 모델의 특징"></a>관계형 모델의 특징</h2><h4 id="Column의-값은-원자값이어야-함"><a href="#Column의-값은-원자값이어야-함" class="headerlink" title="Column의 값은 원자값이어야 함"></a>Column의 값은 원자값이어야 함</h4><ul>
+<li>값의 집합, Multivalue는 가질 수 없음<h4 id="Schema"><a href="#Schema" class="headerlink" title="Schema"></a>Schema</h4></li>
+<li>데이터베이스의 구조를 정의<h4 id="Null"><a href="#Null" class="headerlink" title="Null"></a>Null</h4></li>
+<li>값이 지정되지 않았음을 의미하는 특별한 값 ( 0과는 다른 의미.)</li>
+<li>모든 Domain은 Null값을 포함. (기본적으로 모든 Column에 Null을 저장할 수 있다는 의미)<h4 id="Key"><a href="#Key" class="headerlink" title="Key"></a>Key</h4></li>
+<li>테이블에는 동일한 Row가 존재할 수 없음.</li>
+<li>하나의 Row를 다른 Row와 구별하기 위한 키(Key)가 필요<h4 id="Primary-Key-PK-기본키"><a href="#Primary-Key-PK-기본키" class="headerlink" title="Primary Key (PK) : 기본키"></a>Primary Key (PK) : 기본키</h4></li>
+<li>Table에 Row를 구분하기 위하여 사용하는 기본 키</li>
+<li>하나의 Column, 또는 Column의 집합(복합키) 가능</li>
+<li>Table 생성시 정의됨</li>
+<li>Table에는 동일한 PK를 지닌 Row가 존재할 수 없음<h4 id="Foreign-Key"><a href="#Foreign-Key" class="headerlink" title="Foreign Key"></a>Foreign Key</h4></li>
+<li>다른 Table의 기본키를 참조하는 Column</li>
+<li>Table 간의 관계를 나타내기 위하여 사용</li>
+<li>Null 가능 (차몾되지 않음을 의미)<h4 id="Integrity-Constraint-무결성-제약"><a href="#Integrity-Constraint-무결성-제약" class="headerlink" title="Integrity Constraint (무결성 제약)"></a>Integrity Constraint (무결성 제약)</h4></li>
+<li>개체 무결성(Entity Integrity) : 기본키의 값은 Null이 될 수 없다</li>
+<li>참조 무결성(Referential Integrity) : 외래키의 값은 참조된 릴레이션의 기본키 값이거나 Null이다.</li>
+</ul>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://jungkyungmin.github.io/2021/10/21/db/" data-id="ckvl89ut20007y8u31mqs30qt" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "JungKyungMin"
+        },
+        "headline": "DB와 DBMS",
+        "image": "https://jungkyungmin.github.io",
+        "keywords": "DB DBMS",
+        "genre": "DB",
+        "datePublished": "2021-10-21",
+        "dateCreated": "2021-10-21",
+        "dateModified": "2021-10-27",
+        "url": "https://jungkyungmin.github.io/2021/10/21/db/",
+        "description": "1. 데이터베이스(DB)란?데이터베이스는 컴퓨터시스템에 전자적으로 저장된 체계적 데이터의 모음
+특징
+실시간 접근성
+사용자의 요구(Query)를 실시간 처리 및 응답한다.
+
+
+계속적인 변화
+삽입, 삭제, 수정 등의 동적인 작업을 통해 데이터를 지속적으로 갱신할 수 있다.
+
+
+동시공유
+여러 사용자가 동일한 데이터를 동시에 접근 및 사용할 수 있다.
+
+
+내용에 ",
+        "wordCount": 355
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="stack-overflow" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2021/10/28/servlet-md/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Servlet Programming
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2021/10/21/generics/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">지네릭스 &lt;Generics&gt;</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/10/28/servlet-md/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/apachetomcat2.svg)" alt="Servlet Programming" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JAVA/">JAVA</a></p>
+                            <p class="item-title"><a href="/2021/10/28/servlet-md/" class="title">Servlet Programming</a></p>
+                            <p class="item-date"><time datetime="2021-10-28T14:42:50.000Z" itemprop="datePublished">2021-10-28</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/10/21/db/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/DB/">DB</a></p>
+                            <p class="item-title"><a href="/2021/10/21/db/" class="title">DB와 DBMS</a></p>
+                            <p class="item-date"><time datetime="2021-10-21T05:42:00.000Z" itemprop="datePublished">2021-10-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/10/21/generics/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/etc/">etc</a></p>
+                            <p class="item-title"><a href="/2021/10/21/generics/" class="title">지네릭스 &lt;Generics&gt;</a></p>
+                            <p class="item-date"><time datetime="2021-10-21T04:58:26.000Z" itemprop="datePublished">2021-10-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/10/21/h2/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/DB/">DB</a></p>
+                            <p class="item-title"><a href="/2021/10/21/h2/" class="title">h2</a></p>
+                            <p class="item-date"><time datetime="2021-10-21T04:36:06.000Z" itemprop="datePublished">2021-10-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2021/10/14/spring-iocdi/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/iocdi.png)" alt="Spring- IoC / DI" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Spring/">Spring</a></p>
+                            <p class="item-title"><a href="/2021/10/14/spring-iocdi/" class="title">Spring- IoC / DI</a></p>
+                            <p class="item-date"><time datetime="2021-10-14T13:29:00.000Z" itemprop="datePublished">2021-10-14</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/1/">1</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/3/">3</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/DB/">DB</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/basic/">basic</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Markdown/">Markdown</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network/">Network</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring/">Spring</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/etc/">etc</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/etc/HTML/">HTML</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a><span class="archive-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/1/" rel="tag">1</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/3/" rel="tag">3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DB/" rel="tag">DB</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DBMS/" rel="tag">DBMS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DI/" rel="tag">DI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IoC/" rel="tag">IoC</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Network/" rel="tag">Network</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/forward/" rel="tag">forward</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/generics/" rel="tag">generics</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/h2/" rel="tag">h2</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redirect/" rel="tag">redirect</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%9C%A0%ED%9A%A8%EC%84%B1-%EA%B2%80%EC%82%AC/" rel="tag">유효성 검사</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/1/" style="font-size: 10px;">1</a> <a href="/tags/3/" style="font-size: 10px;">3</a> <a href="/tags/DB/" style="font-size: 20px;">DB</a> <a href="/tags/DBMS/" style="font-size: 10px;">DBMS</a> <a href="/tags/DI/" style="font-size: 10px;">DI</a> <a href="/tags/IoC/" style="font-size: 10px;">IoC</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Network/" style="font-size: 10px;">Network</a> <a href="/tags/forward/" style="font-size: 10px;">forward</a> <a href="/tags/generics/" style="font-size: 10px;">generics</a> <a href="/tags/h2/" style="font-size: 10px;">h2</a> <a href="/tags/redirect/" style="font-size: 10px;">redirect</a> <a href="/tags/%EC%9C%A0%ED%9A%A8%EC%84%B1-%EA%B2%80%EC%82%AC/" style="font-size: 10px;">유효성 검사</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2021 JungKyungMin</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'https://jungkyungmin.github.io/2021/10/21/db/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>

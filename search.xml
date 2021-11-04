@@ -334,6 +334,33 @@
     
     
     <entry>
+      <title>Forward vs Redirect</title>
+      <link href="/2021/07/29/forwardredirect/"/>
+      <url>/2021/07/29/forwardredirect/</url>
+      
+        <content type="html"><![CDATA[<p>X</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Network </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> forward </tag>
+            
+            <tag> redirect </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2021/07/29/hello-world/"/>
       <url>/2021/07/29/hello-world/</url>
