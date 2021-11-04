@@ -59,27 +59,6 @@
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/tags/framework/</loc>
-        <lastmod>2021-10-13T03:33:49.754Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/tags/blog/</loc>
-        <lastmod>2021-10-13T03:33:49.754Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/tags/hexo/</loc>
-        <lastmod>2021-10-13T03:33:49.754Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://jungkyungmin.github.io/tags/%EC%9C%A0%ED%9A%A8%EC%84%B1-%EA%B2%80%EC%82%AC/</loc>
         <lastmod>2021-10-06T12:42:54.872Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -96,13 +75,6 @@
     <url>
         <loc>https://jungkyungmin.github.io/tags/1/</loc>
         <lastmod>2021-09-29T07:02:09.782Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/tags/2/</loc>
-        <lastmod>2021-09-29T07:02:04.946Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
