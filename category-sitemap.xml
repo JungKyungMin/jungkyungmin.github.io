@@ -9,71 +9,64 @@
 
 
     <url>
+        <loc>https://jungkyungmin.github.io/categories/Java/basic/</loc>
+        <lastmod>2021-11-04T17:42:08.863Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/categories/Java/X/</loc>
+        <lastmod>2021-11-04T17:42:08.863Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/categories/X/</loc>
+        <lastmod>2021-11-04T17:42:08.863Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/categories/Java/</loc>
+        <lastmod>2021-11-04T17:42:08.863Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://jungkyungmin.github.io/categories/Network/</loc>
-        <lastmod>2021-11-04T17:28:23.509Z</lastmod>
+        <lastmod>2021-11-04T17:42:08.863Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/categories/Markdown/</loc>
-        <lastmod>2021-11-04T16:22:10.573Z</lastmod>
+        <loc>https://jungkyungmin.github.io/categories/Network/X/</loc>
+        <lastmod>2021-11-04T17:40:45.250Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/categories/etc/HTML/</loc>
-        <lastmod>2021-10-29T06:32:44.880Z</lastmod>
+        <loc>https://jungkyungmin.github.io/categories/Java/Spring/</loc>
+        <lastmod>2021-11-04T17:40:17.596Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/categories/etc/</loc>
-        <lastmod>2021-10-29T06:32:44.880Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/categories/JAVA/</loc>
-        <lastmod>2021-10-28T15:41:58.998Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/categories/JAVA/basic/</loc>
-        <lastmod>2021-10-27T05:41:20.902Z</lastmod>
+        <loc>https://jungkyungmin.github.io/categories/DB/X/</loc>
+        <lastmod>2021-11-04T17:37:52.501Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://jungkyungmin.github.io/categories/DB/</loc>
-        <lastmod>2021-10-27T05:37:15.244Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/categories/Spring/</loc>
-        <lastmod>2021-10-15T08:33:50.910Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/categories/3/</loc>
-        <lastmod>2021-09-29T07:02:28.027Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/categories/1/</loc>
-        <lastmod>2021-09-29T07:02:09.782Z</lastmod>
+        <lastmod>2021-11-04T17:37:52.501Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
