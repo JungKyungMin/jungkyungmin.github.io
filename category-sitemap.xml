@@ -9,8 +9,15 @@
 
 
     <url>
+        <loc>https://jungkyungmin.github.io/categories/Markdown/</loc>
+        <lastmod>2021-11-04T09:02:17.853Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://jungkyungmin.github.io/categories/Network/</loc>
-        <lastmod>2021-11-04T08:26:51.685Z</lastmod>
+        <lastmod>2021-11-04T08:58:57.718Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -67,27 +74,6 @@
     <url>
         <loc>https://jungkyungmin.github.io/categories/Web/</loc>
         <lastmod>2021-10-13T03:33:49.754Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/categories/4/</loc>
-        <lastmod>2021-10-06T12:31:21.092Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/categories/9/</loc>
-        <lastmod>2021-09-29T07:06:37.121Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/categories/6/</loc>
-        <lastmod>2021-09-29T07:05:17.237Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

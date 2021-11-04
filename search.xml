@@ -185,23 +185,48 @@
     
     
     <entry>
-      <title>alg2</title>
+      <title>Markdown 문법</title>
       <link href="/2021/09/01/20210901-alg2/"/>
       <url>/2021/09/01/20210901-alg2/</url>
       
-        <content type="html"><![CDATA[<p>6<br>6<br>hello</p>]]></content>
+        <content type="html"><![CDATA[<p>2</p>]]></content>
       
       
       <categories>
           
-          <category> 6 </category>
+          <category> Markdown </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 6 </tag>
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown 문법</title>
+      <link href="/2021/09/01/markdown/"/>
+      <url>/2021/09/01/markdown/</url>
+      
+        <content type="html"><![CDATA[<p>1</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
             
         </tags>
       
@@ -214,7 +239,7 @@
       <link href="/2021/09/01/httpvshttps/"/>
       <url>/2021/09/01/httpvshttps/</url>
       
-        <content type="html"><![CDATA[<h1 id="HTTP-vs-HTTPS"><a href="#HTTP-vs-HTTPS" class="headerlink" title="HTTP vs HTTPS"></a>HTTP vs HTTPS</h1><h2 id="1-HTTP-Hyper-Text-Transfer-Protocol"><a href="#1-HTTP-Hyper-Text-Transfer-Protocol" class="headerlink" title="1. HTTP (Hyper Text Transfer Protocol)"></a>1. HTTP (Hyper Text Transfer Protocol)</h2><p>HTTP란 서버/클라이언트 모델을 따라 데이터를 주고 받기 위한 프로토콜이다.<br>인터넷에서 하이퍼텍스트를 교환하기 위한 통신규약으로 80번 포트를 사용한다.<br>HTTP서버가 80번 포트에서 요청을 기다리고 있으며, 클라이언트 또한 80번 포트로 요청을 보내게 된다. HTTP는 애플리케이션 레벨의 프로토콜로 TCP/IP위에서 작동한다. HTTP는 상태를 가지고 있지 않는 Stateless 프로토콜이며 Method, Path, Version, Headers, Body 등으로 구성된다.<br>하지만 HTTP는 암호화가 되지 않은 데이터를 전송하는 프로토콜이기 때문에, http로 비밀번호 등을 주고 받으면 제3자가 정보를 조회할 수 있다. 이러한 문제를 해결하기 위해 https가 등장하게 된다.</p><h5 id="HTTP의-주요-에러"><a href="#HTTP의-주요-에러" class="headerlink" title="HTTP의 주요 에러"></a>HTTP의 주요 에러</h5><ul><li>403 error : 사용자가 권한을 갖고 있지 않을 때 서버가 요청을 거부.</li><li>404 error : Not Found. 클라이언트가 요청한 정보를 서버가 갖고 있지 않을 때. ex) URI가 틀렸을 때.</li><li>500 error : 서버 에러</li></ul><h2 id="2-HTTPS-HTTP-Secure"><a href="#2-HTTPS-HTTP-Secure" class="headerlink" title="2.HTTPS (HTTP Secure)"></a>2.HTTPS (HTTP Secure)</h2><p>HTTPS는 HTTP에 데이터 암호화가 추가된 프로토콜이다.<br>HTTPS는 443번 포트를 사용하며 제3자가 정보를 볼 수 없도록 공개키 암호화를 지원하고 있다.<br>HTTPS는 HTTP의 텍스트에 SSL이나 TLS프로토콜을 통해 데이터를 암호화해서 서버와 브라우저가 민감한 정보를 주고받을 때 데이터가 도난당하는 것을 방지해준다.<br>HTTP는 인증서를 발급하고 유지하기 위한 추가 비용이 발생한다.</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="HTTP-vs-HTTPS"><a href="#HTTP-vs-HTTPS" class="headerlink" title="HTTP vs HTTPS"></a>HTTP vs HTTPS</h1><h2 id="1-HTTP-Hyper-Text-Transfer-Protocol"><a href="#1-HTTP-Hyper-Text-Transfer-Protocol" class="headerlink" title="1. HTTP (Hyper Text Transfer Protocol)"></a>1. HTTP (Hyper Text Transfer Protocol)</h2><p>HTTP란 서버/클라이언트 모델을 따라 데이터를 주고 받기 위한 프로토콜이다.<br>인터넷에서 하이퍼텍스트를 교환하기 위한 통신규약으로 80번 포트를 사용한다.<br>HTTP서버가 80번 포트에서 요청을 기다리고 있으며, 클라이언트 또한 80번 포트로 요청을 보내게 된다. HTTP는 애플리케이션 레벨의 프로토콜로 TCP/IP위에서 작동한다. HTTP는 상태를 가지고 있지 않는 Stateless 프로토콜이며 Method, Path, Version, Headers, Body 등으로 구성된다.<br>하지만 HTTP는 암호화가 되지 않은 데이터를 전송하는 프로토콜이기 때문에, http로 비밀번호 등을 주고 받으면 제3자가 정보를 조회할 수 있다. 이러한 문제를 해결하기 위해 https가 등장하게 된다.</p><h5 id="HTTP의-주요-에러"><a href="#HTTP의-주요-에러" class="headerlink" title="HTTP의 주요 에러"></a>HTTP의 주요 에러</h5><ul><li>403 error : 사용자가 권한을 갖고 있지 않을 때 서버가 요청을 거부.</li><li>404 error : Not Found. 클라이언트가 요청한 정보를 서버가 갖고 있지 않을 때. ex) URI가 틀렸을 때.</li><li>500 error : 서버 에러</li></ul><h2 id="2-HTTPS-HTTP-Secure"><a href="#2-HTTPS-HTTP-Secure" class="headerlink" title="2. HTTPS (HTTP Secure)"></a>2. HTTPS (HTTP Secure)</h2><p>HTTPS는 HTTP에 데이터 암호화가 추가된 프로토콜이다.<br>HTTPS는 443번 포트를 사용하며 제3자가 정보를 볼 수 없도록 공개키 암호화를 지원하고 있다.<br>HTTPS는 HTTP의 텍스트에 SSL이나 TLS프로토콜을 통해 데이터를 암호화해서 서버와 브라우저가 민감한 정보를 주고받을 때 데이터가 도난당하는 것을 방지해준다.<br>HTTPS는 인증서를 발급하고 유지하기 위한 추가 비용이 발생한다.</p>]]></content>
       
       
       <categories>
@@ -235,50 +260,38 @@
     
     
     <entry>
-      <title>testtt</title>
-      <link href="/2021/08/18/20210818-testtt/"/>
-      <url>/2021/08/18/20210818-testtt/</url>
+      <title>Post vs Get</title>
+      <link href="/2021/08/18/postvsget/"/>
+      <url>/2021/08/18/postvsget/</url>
       
-        <content type="html"><![CDATA[<p>4xxxxcvzxcv<br>ccccczxcvzxvcxzcvz<br>asfdsfasfsadfas<br>fsafasfsafasfas<br>xzcvzxcvzxvzxc<br>cxzcvzxcvzxvzxc</p><p>xzcvzxcvzxvzxc<br>xzcvzxcvzxvzxc</p><p>xzcvzxcvzxvzxc<br>xzcvzxcvzxvzxc<br>xzkicvzxcvzxvzxc<br>xzcvzxcvzxvzxc<br>xzcvzxcvzxvzxc<br>zxc</p>]]></content>
+        <content type="html"><![CDATA[<p>GET 방식 (보안 X)<br>POST 방식 (보안 O)</p>]]></content>
       
       
       <categories>
           
-          <category> 4 </category>
+          <category> Network </category>
           
       </categories>
       
-      
-        <tags>
-            
-            <tag> 4 </tag>
-            
-        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>test66</title>
-      <link href="/2021/08/18/20210818-test66/"/>
-      <url>/2021/08/18/20210818-test66/</url>
+      <title>URI vs URL</title>
+      <link href="/2021/08/18/urlvsuri/"/>
+      <url>/2021/08/18/urlvsuri/</url>
       
-        <content type="html"><![CDATA[<p>9<br>9<br>asdfasf<br>asfdas<br>fas<br>fas<br>fdas<br>fas<br>fasf</p>]]></content>
+        <content type="html"><![CDATA[<p>정의<br>URI : Uniform Resource Identifier 의 약자로 인터넷상 포현할수 있는 모든 리소스를 의미한다.</p><p>URL : Uniform Resource Locator 의 약자로 URI에서 네트워크상 경로, 어떤 자원의 위치에 대한 절대경로값을 지닌 문자열를 의미한다.</p><p>URI &gt; URL</p><p><a href="http://news.naver.com/main/list.nhn?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y&amp;aid=0009998039">http://news.naver.com/main/list.nhn?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y&amp;aid=0009998039</a></p><ol><li>protocol</li></ol><ul><li>http://</li></ul><ol start="2"><li>domain</li></ol><ul><li>news.naver.com/</li></ul><ol start="3"><li>경로</li></ol><ul><li>main/</li></ul><ol start="4"><li>파일이름</li></ol><ul><li>list.nhn</li></ul><ol start="5"><li>query</li></ol><ul><li>?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y&amp;aid=0009998039</li></ul><p>위의 주소는 URI 이지만, URL이라고 말할 수 없다.<br>URL은 어떤 자원의 위치에 대한 절대경로를 나타낸다.<br>Query는 경로에 따라 변수, 값, 그에 따른 Query 개수도 바뀐다. 즉 상대적인 경로를 가지게 된다. 그렇기에 URL은 상대경로를 나타내는 Query를 가질 수 없다.<br>URL은 <a href="http://news.naver.com/main/list.nhn">http://news.naver.com/main/list.nhn</a> 까지이다.<br>URI는 Query까지 가지고 있는 전체주소이다.</p><img src="/image/URIvsURL.png" width="70%" height="70%"/><p>@<a href="https://mwoo526.tistory.com/17">https://mwoo526.tistory.com/17</a></p>]]></content>
       
       
       <categories>
           
-          <category> 9 </category>
+          <category> Network </category>
           
       </categories>
       
-      
-        <tags>
-            
-            <tag> 9 </tag>
-            
-        </tags>
       
     </entry>
     
