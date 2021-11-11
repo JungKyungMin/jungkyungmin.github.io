@@ -9,6 +9,13 @@
 
 
     <url>
+        <loc>https://jungkyungmin.github.io/categories/%25EC%259A%25B4%25EC%2598%2581%25EC%25B2%25B4%25EC%25A0%259C/</loc>
+        <lastmod>2021-11-11T14:50:03.084Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://jungkyungmin.github.io/categories/Java/basic/</loc>
         <lastmod>2021-11-04T17:42:08.863Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -30,14 +37,14 @@
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/categories/Java/</loc>
+        <loc>https://jungkyungmin.github.io/categories/Network/</loc>
         <lastmod>2021-11-04T17:42:08.863Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://jungkyungmin.github.io/categories/Network/</loc>
+        <loc>https://jungkyungmin.github.io/categories/Java/</loc>
         <lastmod>2021-11-04T17:42:08.863Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
