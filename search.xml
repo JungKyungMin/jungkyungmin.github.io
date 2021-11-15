@@ -73,6 +73,8 @@
       
       <categories>
           
+          <category> ppp </category>
+          
           <category> Java </category>
           
           <category> X </category>
@@ -123,6 +125,8 @@
       
       <categories>
           
+          <category> ppp </category>
+          
           <category> Java </category>
           
           <category> X </category>
@@ -169,6 +173,8 @@
       
       <categories>
           
+          <category> ppp </category>
+          
           <category> Java </category>
           
           <category> Spring </category>
@@ -189,7 +195,7 @@
     
     
     <entry>
-      <title>note1.md</title>
+      <title>유효성 검사</title>
       <link href="/2021/10/06/check/"/>
       <url>/2021/10/06/check/</url>
       
@@ -197,6 +203,8 @@
       
       
       <categories>
+          
+          <category> ppp </category>
           
           <category> Java </category>
           
@@ -331,6 +339,8 @@
       
       
       <categories>
+          
+          <category> ppp </category>
           
           <category> Java </category>
           

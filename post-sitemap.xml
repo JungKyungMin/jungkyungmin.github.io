@@ -9,112 +9,8 @@
 
 
     <url>
-        <loc>https://jungkyungmin.github.io/2021/11/16/xxx/</loc>
-        <lastmod>2021-11-15T15:15:40.084Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://jungkyungmin.github.io/2021/10/06/check/</loc>
-        <lastmod>2021-11-15T15:07:16.583Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/11/11/mutexsemaphore-md/</loc>
-        <lastmod>2021-11-11T14:52:17.923Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/10/21/h2/</loc>
-        <lastmod>2021-11-04T17:42:08.863Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/09/01/httpvshttps/</loc>
-        <lastmod>2021-11-04T17:42:08.863Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/08/12/java-basic/</loc>
-        <lastmod>2021-11-04T17:42:08.863Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/10/28/servlet-md/</loc>
-        <lastmod>2021-11-04T17:42:08.863Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/08/18/HTML/</loc>
-        <lastmod>2021-11-04T17:41:44.298Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/09/01/markdown/</loc>
-        <lastmod>2021-11-04T17:41:30.583Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/07/30/my-new-post2/</loc>
-        <lastmod>2021-11-04T17:41:19.536Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/07/30/write/</loc>
-        <lastmod>2021-11-04T17:41:03.270Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/08/18/urlvsuri/</loc>
-        <lastmod>2021-11-04T17:40:45.250Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/10/14/spring-iocdi/</loc>
-        <lastmod>2021-11-04T17:40:17.596Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/08/18/postvsget/</loc>
-        <lastmod>2021-11-04T17:39:07.080Z</lastmod>
+        <lastmod>2021-11-15T15:21:07.447Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -122,15 +18,7 @@
 
     <url>
         <loc>https://jungkyungmin.github.io/2021/10/21/db/</loc>
-        <lastmod>2021-11-04T17:37:52.501Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://jungkyungmin.github.io/2021/07/29/forwardredirect/</loc>
-        <lastmod>2021-11-04T17:37:51.819Z</lastmod>
+        <lastmod>2021-11-15T15:21:06.726Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -138,7 +26,23 @@
 
     <url>
         <loc>https://jungkyungmin.github.io/2021/10/21/generics/</loc>
-        <lastmod>2021-11-04T17:37:51.132Z</lastmod>
+        <lastmod>2021-11-15T15:21:06.132Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/07/29/forwardredirect/</loc>
+        <lastmod>2021-11-15T15:21:05.365Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/10/21/h2/</loc>
+        <lastmod>2021-11-15T15:21:04.705Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -146,7 +50,103 @@
 
     <url>
         <loc>https://jungkyungmin.github.io/2021/07/29/hello-world/</loc>
-        <lastmod>2021-11-04T17:37:49.583Z</lastmod>
+        <lastmod>2021-11-15T15:21:04.178Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/08/18/HTML/</loc>
+        <lastmod>2021-11-15T15:21:03.672Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/09/01/httpvshttps/</loc>
+        <lastmod>2021-11-15T15:21:03.132Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/08/12/java-basic/</loc>
+        <lastmod>2021-11-15T15:21:02.558Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/09/01/markdown/</loc>
+        <lastmod>2021-11-15T15:21:01.965Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/11/11/mutexsemaphore-md/</loc>
+        <lastmod>2021-11-15T15:21:01.441Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/07/30/my-new-post2/</loc>
+        <lastmod>2021-11-15T15:21:00.910Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/08/18/postvsget/</loc>
+        <lastmod>2021-11-15T15:21:00.359Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/10/28/servlet-md/</loc>
+        <lastmod>2021-11-15T15:20:59.809Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/10/14/spring-iocdi/</loc>
+        <lastmod>2021-11-15T15:20:59.246Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/08/18/urlvsuri/</loc>
+        <lastmod>2021-11-15T15:20:58.659Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/07/30/write/</loc>
+        <lastmod>2021-11-15T15:20:58.071Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://jungkyungmin.github.io/2021/11/16/xxx/</loc>
+        <lastmod>2021-11-15T15:20:52.600Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
